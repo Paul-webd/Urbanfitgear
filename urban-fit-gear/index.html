@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Fit Gear</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Urban Fit Gear</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="products" class="product-grid">
+    <article class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Running Shoes" />
+      <h2>Running Shoes</h2>
+      <p>$59.99</p>
+      <button onclick="addToCart('Running Shoes')">Add to cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Gym Backpack" />
+      <h2>Gym Backpack</h2>
+      <p>$39.99</p>
+      <button onclick="addToCart('Gym Backpack')">Add to cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Fitness T-Shirt" />
+      <h2>Fitness T-Shirt</h2>
+      <p>$19.99</p>
+      <button onclick="addToCart('Fitness T-Shirt')">Add to cart</button>
+    </article>
+  </section>
+
+  <section id="about">
+    <h2>About Urban Fit Gear</h2>
+    <p>Urban Fit Gear is a sample fitness gear store developed to demonstrate responsive design and basic front-end functionality using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@urbanfitgear.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Urban Fit Gear. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function addToCart(productName) {
+      console.log(productName + ' added to cart.');
+      alert(productName + ' added to cart.');
+    }
+  </script>
+</body>
+</html>
